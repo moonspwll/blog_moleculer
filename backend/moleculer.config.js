@@ -6,6 +6,6 @@ module.exports = {
   serializer: "JSON",
   hotReload: true,
   started(broker) {
-    console.log("Broker dev started!");
+    console.log("Broker dev started with ", process.env.DB_NAME, process.env.DB_USER, process.env.DB_HOST, process.env.DB_PASS);
   },
 };
